@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+*{
+    font-family: 'Roboto', sans-serif;
+}
+
+button{
+    height: 7vh;
+    width: 10%;
+    font-size:24px;
+    cursor: pointer;
+    background-color: #fca8dc;
+    border: none;
+    border-radius: 5px;
+}
+.container{
+    border: 2px solid #a8dadc;
+    border-radius: 1rem;
+    display: grid;
+    grid-template-rows: repeat(var(--rowNum), minmax(0px, 1fr));
+    grid-template-columns: repeat(var(--colNum), minmax(0px, 1fr));
+    grid-gap: 1px;
+    width: 960px;
+    height: 960px;
+    justify-content: center;
+    align-content: center;
+}
+.box {
+    border: 0.5px solid rgba(0, 0, 0, 0.05);
+    border-radius: 0.5rem;
+}
